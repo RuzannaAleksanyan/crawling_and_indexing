@@ -1,8 +1,6 @@
 #ifndef Inverted_Index
 #define Inverted_Index
 
-// g++ -std=c++11 inverted_index.cpp -o inverted_index 
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -12,7 +10,6 @@
 #include <algorithm>
 #include <iterator>
 #include <chrono>
-
 
 void print_header(const std::vector<std::string>& filenames);
 void print_row(const std::string& term, const std::vector<std::string>& documents, const std::unordered_set<std::string>& doc_IDs, std::vector<std::vector<int>>& matrix, int term_index);
